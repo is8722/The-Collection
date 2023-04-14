@@ -1,0 +1,131 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100%;
+    background: url(img/field.jpg)no-repeat center center/cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+
+}
+
+header {
+
+    width: 90%;
+    height: auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+
+}
+
+.team {
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.team img {
+
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+    background: rgb(2, 0, 36);
+
+
+
+
+}
+
+
+.team .content {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+    background: #a7c957;
+    transition: transform .1s;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(79, 121, 9, 0.9949229691876751) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+
+
+.team .content::before {
+
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 20px 20px;
+    z-index: -1;
+    transition: transform .1s;
+}
+
+.content h3 {
+
+    color: black;
+    padding: 5px 0px 0px 10px;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.content p {
+
+    color: black;
+    padding: 0px 0px 5px 10px;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.content h6 {
+
+    color: black;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-family: 'Trebuchet MS';
+    
+}
+
+#cercle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background:green;
+}
